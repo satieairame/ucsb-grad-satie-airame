@@ -1,0 +1,22 @@
+---
+title: "group_A_ucsb_grad"
+author: "Satie Airame and Allison Horst"
+date: "11/28/2020"
+output: html_document
+---
+
+# UCSB Domestic Graduate enrollment (individual counts) by race/ethnicity from 2008 - 2019
+#### Data source: UCSB Office of Budget and Planning Campus Profiles
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+# Read in ucsb_grad_data.csv
+
+```{r}
+ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
+```
+
